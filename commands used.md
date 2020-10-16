@@ -6,19 +6,19 @@
 
 ### to create a key
 
-aws ec2 create-key-pair --key-name <keyname>
+aws ec2 create-key-pair --key-name < keyname  >
 
 
 
 ### to create a security group
 
-aws ec2  create-security-group --description  < description >   --group-name <groupname>
+aws ec2  create-security-group --description  < description >   --group-name < groupname >
 
 
 
 ### to add an ingress rule
 
-aws ec2 authorize-security-group-ingress --group-id sg-00a4b2e24d7e1a004 --protocol tcp --port 22 --cidr  0.0.0.0/0
+aws ec2 authorize-security-group-ingress --group-id  < security group name > --protocol < protocol name > --port < port number >  --cidr   < cidr range >
 
 
 
@@ -26,9 +26,9 @@ aws ec2 authorize-security-group-ingress --group-id sg-00a4b2e24d7e1a004 --proto
 
 
 
-aws ec2 run-instances  --image-id    <ami id>         --instance-type <instance type>   --count < number of instances to launch with same configurations>  
+aws ec2 run-instances  --image-id    < ami id >         --instance-type < instance type >   --count < number of instances to launch with same configurations>  
 
---security-group-ids  <security group id>  --subnet-id <subnet id>  --key-name <key name>
+--security-group-ids  < security group id >  --subnet-id < subnet i d>  --key-name < key name >
 
 
 
@@ -36,16 +36,16 @@ aws ec2 run-instances  --image-id    <ami id>         --instance-type <instance 
 ### to create a volume in the zone where the instance is as it is a zonal service.
 
 
-aws ec2 create-volume --availability-zone <the zone should be same as the ec2 instance zone>  --size <size of the ebs storage>
+aws ec2 create-volume --availability-zone < the zone should be same as the ec2 instance zone  >  --size < size of the ebs storage >
 
---volume-type <type of the volume : depends on the io speed and other factors>
+--volume-type <type of the volume : depends on the io speed and other factors >
 
 
 
 
 ### to attach to the instance we have launched
 
-aws ec2 attach-volume   --volume-id <volume id>   --instance-id    <instance id>    --device < block device name like : /dev/sd[a-z]> 
+aws ec2 attach-volume   --volume-id <  volume id >   --instance-id    < instance id >    --device < block device name like : /dev/sd[a-z] > 
 
 
 
