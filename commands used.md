@@ -1,4 +1,4 @@
-## MOST USEFUL COMMANDS(if  you know logically what to do):
+### MOST USEFUL COMMANDS(if  you know logically what to do):
   
     - aws help
     - aws  [command] help
@@ -52,7 +52,7 @@ aws ec2 attach-volume   --volume-id <volume id>   --instance-id    <instance id>
 
 ### first of all we need to detach teh volume we have attached
 
-aws ec2 detach-volume --volume-id <volume id>
+aws ec2 detach-volume   --volume-id < volume id >
 
 
 
@@ -60,7 +60,7 @@ aws ec2 detach-volume --volume-id <volume id>
 ### terminate the instance
 
 
-aws ec2  terminate-instances --instance-id <instance id>
+aws ec2  terminate-instances - -instance-id < instance id >
 
 
 
@@ -68,7 +68,7 @@ aws ec2  terminate-instances --instance-id <instance id>
 ### delete the volume
 
 
-aws ec2  delete-volumes --volume-id <volume id>
+aws ec2  delete-volumes --volume-id <  volume id >
 
 
 
@@ -76,7 +76,7 @@ aws ec2  delete-volumes --volume-id <volume id>
 ### delete the security group
 
 
-aws ec2  delete-security-group --group-id <security group id>
+aws ec2  delete-security-group --group-id < security group id  >
 
 
 
@@ -84,4 +84,4 @@ aws ec2  delete-security-group --group-id <security group id>
 ###  delete the key
 
 
-aws ec2 delete-key-pair --key-name <key name>
+aws ec2 delete-key-pair --key-name <  key name  >
