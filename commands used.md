@@ -46,7 +46,7 @@
 
 
 
-### first of all we need to detach teh volume we have attached
+### first of all we need to detach the volume we have attached
 
 > aws ec2 detach-volume   --volume-id < volume id >
 
